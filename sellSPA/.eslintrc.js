@@ -23,10 +23,12 @@ module.exports = {
     'generator-star-spacing': 0,
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    'semi': ['error','always'],
+    'semi': ['error', 'always'],
     'space-before-function-paren': 0,
-    'spaced-comment':0,
-    'indent':0,
-    'no-tabs':0
+    'spaced-comment': 0,
+    'indent': 0,
+    'no-tabs': 0,
+    'space-in-parens': 0,
+    'space-before-blocks': 0
   }
 }

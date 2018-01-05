@@ -24,7 +24,7 @@
     props: {
       ratings: {
         type: Array,
-        default() {
+        default () {
           return [];
         }
       },
@@ -38,7 +38,7 @@
       },
       desc: {
         type: Object,
-        default() {
+        default () {
           return {
             all: '全部',
             positive: '满意',
@@ -48,29 +48,29 @@
       }
     },
     computed: {
-      positives() {
-        return this.ratings.filter((rating) => {
+      positives () {
+        return this.ratings.filter( ( rating ) => {
           return rating.rateType === POSITIVE;
-        });
+        } );
       },
-      negatives() {
-        return this.ratings.filter((rating) => {
+      negatives () {
+        return this.ratings.filter( ( rating ) => {
           return rating.rateType === NEGATIVE;
-        });
+        } );
       }
     },
     methods: {
-      select(type, event) {
-        if (!event._constructed) {
+      select ( type, event ) {
+        if ( !event._constructed ){
           return;
         }
-        this.$emit('selecttype', type);
+        this.$emit( 'selecttype', type );
       },
-      toggleContent(event) {
-        if (!event._constructed) {
+      toggleContent ( event ) {
+        if ( !event._constructed ){
           return;
         }
-        this.$emit('content');
+        this.$emit( 'content' );
       }
     }
   };
