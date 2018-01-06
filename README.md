@@ -1,6 +1,6 @@
 # Vue2.0仿饿了么webapp单页应用
-##跟慕课网课程学习
-依赖工具：
+## 跟慕课网课程学习
+## 依赖工具：
 - vue-cli
 - express
 - vue-resource
@@ -11,11 +11,13 @@
 ## 说明
 安装node
 
-##install dependencies
+```bash
+# install dependencies
 $ npm install
 
-##server with hot reload at localhost:8080
+# server with hot reload at localhost:8080
 $ npm run dev
 
-##build for production with minification
+# build for production with minification
 $ npm run build
+```
