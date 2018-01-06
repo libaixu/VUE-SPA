@@ -11,11 +11,11 @@
 ## 说明
 安装node
 
-install dependencies
+##install dependencies
 $ npm install
 
-server with hot reload at localhost:8080
+##server with hot reload at localhost:8080
 $ npm run dev
 
-build for production with minification
+##build for production with minification
 $ npm run build
