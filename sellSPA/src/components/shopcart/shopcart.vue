@@ -19,14 +19,16 @@
         </div>
       </div>
       <div class="ball-container">
-        <transition-group name="drop"
-                          v-on:before-enter="beforeEnter"
-                          v-on:enter="enter"
-                          v-on:after-enter="afterEnter">
-          <div v-for="ball in balls" v-show="ball.show" class="ball" key="a">
-            <div class="inner inner-hook" key="b"></div>
-          </div>
-        </transition-group>
+        <div v-for="ball in balls">
+          <transition name="drop"
+                      v-on:before-enter="beforeEnter"
+                      v-on:enter="enter"
+                      v-on:after-enter="afterEnter">
+            <div v-show="ball.show" class="ball">
+              <div class="inner inner-hook"></div>
+            </div>
+          </transition>
+        </div>
       </div>
       <transition name="fold">
         <div class="shopcart-list" v-show="listShow">
