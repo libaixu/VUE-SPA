@@ -21,4 +21,4 @@ $ npm run dev
 # build for production with minification
 $ npm run build
 ```
-![vue-sell](http://webapp.didistatic.com/static/webapp/shield/vue-sell.png)
+[项目演示地址](http://vuejssellapp.t.imooc.io/#!/)
