@@ -5,14 +5,14 @@ var port = process.env.PORT || config.build.port;
 
 var app = express();
 
-var router = express.Router();
+// var router = express.Router();
 
-router.get('/', function (req, res ,next) {
-  req.url = 'index.html';
-  next();
-})
+// router.get('/', function (req, res ,next) {
+//   req.url = 'index.html';
+//   next();
+// })
 
-app.use(router);
+// app.use(router);
 
 var appData = require('./data.json')
 var seller = appData.seller;
